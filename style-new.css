@@ -1,0 +1,204 @@
+html {
+  background: url(BT_Swiper_Flatirons_BG_NonTransparent.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.button.button-gold, .buttons-color-gold a, .buttons-color-gold a.button { background-color: #0277BD; color: #fff !important; display: inline-block; padding: 5px 10px; font-weight: bold; transition: background-color 0.5s ease; margin-bottom: 5px; text-decoration: none !important; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; -webkit-background-clip: padding-box; -moz-background-clip: padding; background-clip: padding-box; -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); transition: -webkit-box-shadow 0.5s ease, background-color 0.5s ease, color 0.5s ease; transition: -moz-box-shadow 0.5s ease, background-color 0.5s ease, color 0.5s ease; transition: box-shadow 0.5s ease, background-color 0.5s ease, color 0.5s ease; background-color: #cfb87c; color: #111111 !important; }
+.button.button-gold:hover, .button.button-gold:focus, .buttons-color-gold a:hover, .buttons-color-gold a:focus, .buttons-color-gold a.button:hover, .buttons-color-gold a.button:focus { background-color: #cbb271; background-color: #a6a6a6; -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); }
+.button.button-gold:active, .buttons-color-gold a:active, .buttons-color-gold a.button:active { -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35); -moz-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35); box-shadow: 0 3px 15px rgba(0, 0, 0, 0.35); }
+h3{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar {
+  display: grid;
+  background-color: #424242;
+  height: 5%;
+  margin-bottom: 0px;
+}
+.navbar img{
+  grid-column: 0.5;
+  grid-row: 1;
+  vertical-align: middle;
+  padding-top: 20px;
+  width:30%;
+}
+.navbar h3{
+  grid-column: 0.5;
+  padding-right: 10%;
+  grid-row: 1;
+  font-family: "Helvetica Neue";
+  color: white;
+  vertical-align: middle;
+  font-size: 24px;
+}
+.navbar-bottom {
+  display: grid;
+  background-color: #424242;
+  height: 15%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.navbar-bottom img{
+  grid-column: 0.5;
+  grid-row: 1;
+  vertical-align: middle;
+  padding-top: 20px;
+  width:30%;
+}
+.navbar-bottom h3{
+  grid-column: 0.5;
+  padding-right: 10%;
+  grid-row: 1;
+  font-family: "Helvetica Neue";
+  color: white;
+  vertical-align: middle;
+  font-size:24px;
+}
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.body-fit {
+  background: url(BT_Swiper_Flatirons_BG_NonTransparent.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.column {
+  float: left;
+  width: 45%;
+  padding: 0 10px;
+}
+
+.column-small {
+  float: left;
+  width: 10%;
+  padding: 0 10px;
+}
+.column-QR {
+  margin:auto;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px;
+  font-family: 'Roboto';
+  font-size: 12pt;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  font-size: 1.5rem;
+}
+
+.flip-card.hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card,
+.flip-card-front,
+.flip-card-back {
+    background-color: transparent;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+
+/* flip speed */
+
+.flip-card-inner {
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+
+/* hide back of pane during swap */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* front pane, placed above back */
+
+.flip-card-front,.flip-card-back {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-color: #bbb;
+    overflow:auto;
+}
+
+tbody {
+  font-family: 'Roboto';
+}
+
+table.table td, table.table th {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    line-height: normal;
+  }
+  .body-fit {
+    overflow: auto;
+  }
+  .row {
+    padding-bottom: 100px;
+  }
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .column-small {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .navbar img{
+    width:100%;
+  }
+  .navbar h3{
+    font-size:16px;
+   padding-right: 0;
+   padding-left:10%;
+  }
+  .navbar-bottom {
+    height: 12%;
+  }
+  .navbar-bottom img{
+    width:120%;
+    padding-right:30%
+  }
+  .navbar-bottom h3{
+    font-size:16px;
+  }
+}
